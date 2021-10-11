@@ -50,7 +50,7 @@ body {
   left: 0;
   justify-content: center;
   top: 0;
-  height: auto;
+  height: 100vh;
   z-index: 10;
   background: linear-gradient(rgba(11, 12, 12, 0.25), rgba(0, 0, 0, 0.5)),
     url(Images/nav-bar-mobile.jpg) center/cover no-repeat;
