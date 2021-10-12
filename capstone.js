@@ -64,7 +64,7 @@ window.addEventListener('scroll', () => {
 
   if (scrollY > headerHeight) {
     backToTop.classList.add('show-back-top');
-}
+  }
 
   else {
     backToTop.classList.remove('show-back-top');
