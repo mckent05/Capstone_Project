@@ -61,12 +61,10 @@ window.addEventListener('scroll', () => {
   if (scrollY > 70) {
     nav.classList.remove('show-nav');
   }
-
   if (scrollY > headerHeight) {
     backToTop.classList.add('show-back-top');
   }
-
-  else {
+  if (scrollY < headerHeight) {
     backToTop.classList.remove('show-back-top');
   }
 });
