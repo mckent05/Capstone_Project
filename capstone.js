@@ -1,39 +1,39 @@
 const speakerInfo = [
   {
     speakerName: 'Akinlade Tope',
-    speakerImage : 'Images/mobile-header4.jpg',
-    speakerEdu: 'university of lagos',
-    speakerDesc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore aspernatur numquam molestiae explicabo rerum natus dignissimos adipisci fugiat quae quod',
+    speakerImage : 'Images/tope.png',
+    speakerEdu: 'HTML, CSS, JS',
+    speakerDesc: 'Life as a Micronaut has been intriguing and fun. Its been filled fun and annoying moments when i feel like iving up. Moving through the Portal has not been easy, but with persistence and hardwork i was able to progress.',
   },
   {
-    speakerName: 'Akinlade Gbenga',
+    speakerName: 'Meri Gogichasivili (a.k.a The genius',
     speakerImage : 'Images/meri.jpg',
-    speakerEdu: 'university of lagos',
-    speakerDesc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore aspernatur numquam molestiae explicabo rerum natus dignissimos adipisci fugiat quae quod',
+    speakerEdu: 'HTML, CSS, JS',
+    speakerDesc: 'Signing up for Microverse has been of one of my best decisions so far. The Program structure has been really admirable. The tools provided have been really helpful in meeting up with the strict deadlines. I love the networking that comes with being a student in Microverse',
   },
   {
-    speakerName: 'Akinlade Ife',
-    speakerImage : 'Images/mobile-header4.jpg',
-    speakerEdu: 'university of lagos',
-    speakerDesc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore aspernatur numquam molestiae explicabo rerum natus dignissimos adipisci fugiat quae quod',
+    speakerName: 'Tochuckwu Okpara',
+    speakerImage : 'Images/tochi.jfif',
+    speakerEdu: 'HTML, CSS, freecodeCamp certified ',
+    speakerDesc: 'I have had a wonderful eperience so far, first few week was so challenging.The support system provided by Microverse is second to none, my standup team and morning session team were available to help when i had blockers.',
   },
   {
-    speakerName: 'Akinlade Damilola',
+    speakerName: 'Isaac Protic',
     speakerImage : 'Images/mobile-header4.jpg',
-    speakerEdu: 'university of lagos',
-    speakerDesc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore aspernatur numquam molestiae explicabo rerum natus dignissimos adipisci fugiat quae quod',
+    speakerEdu: 'Python, JS, Computer Scientist',
+    speakerDesc: 'The portal for me, has been fun, My morning session and stand up teams have been really helpful when i face blockers.',
   },
   {
-    speakerName: 'Akinlade Damilola',
-    speakerImage : 'Images/mobile-header4.jpg',
-    speakerEdu: 'university of lagos',
-    speakerDesc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore aspernatur numquam molestiae explicabo rerum natus dignissimos adipisci fugiat quae quod',
+    speakerName: 'Jeff Kayombo',
+    speakerImage : 'Images/jeff.jfif',
+    speakerEdu: 'computer engineer',
+    speakerDesc: 'Microverse provides you with most the required materials to guide you through the portal. But i had to do a little bit more reading to meet up with the strict deadlines.Overall, it has been a wonderful experience',
   },
   {
-    speakerName: 'Akinlade Damilola',
-    speakerImage : 'Images/mobile-header4.jpg',
-    speakerEdu: 'university of lagos',
-    speakerDesc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore aspernatur numquam molestiae explicabo rerum natus dignissimos adipisci fugiat quae quod',
+    speakerName: 'Daniel Shadeed',
+    speakerImage : 'Images/daniel.jfif',
+    speakerEdu: 'HTML, CSS, JS',
+    speakerDesc: 'as someone with little or no coding experience before microverse, the first weeks of the portal have been both fun and tiresome. i have enjoyed the projects i worked on, the collaborative sessions with my partners have also been eye-opening',
   },
 ];
 
@@ -115,3 +115,6 @@ showLessSpeakers.addEventListener('click', () =>{
         btnCont.classList.remove('hide-btn');
     };
 });
+
+
+
