@@ -3,7 +3,7 @@
   scroll-behavior: smooth;
 }
 
-@font-face { 
+@font-face {
   font-family: 'MyWebFont';
   src: url('WebFont.eot');
   src: url('WebFont.eot?#iefix') format('embedded-opentype'), url('WebFont.woff') format('woff'), url('WebFont.ttf') format('truetype'), url('WebFont.svg#webfont') format('svg');
@@ -640,8 +640,6 @@ body {
   margin-top: 40px;
 }
 
-
-
 .partner {
   width: 100%;
   display: flex;
@@ -770,6 +768,11 @@ body {
     margin-bottom: 50px;
   }
 
+  .nav-links li a {
+    color: var(--clr-primary);
+    font-size: 18px;
+  }
+
   .nav-links li a:hover {
     color: var(--clr-secondary);
   }
@@ -796,11 +799,6 @@ body {
     margin: 0;
     background-color: white;
     padding: 6px 0;
-  }
-
-  .nav-links li a {
-    color: var(--clr-primary);
-    font-size: 18px;
   }
 
   .header-title,
@@ -857,7 +855,6 @@ body {
   .program-content {
     flex-direction: column;
     row-gap: 10px;
-    
   }
 
   .program-content h2 {
@@ -928,7 +925,7 @@ body {
   .footer-cont img {
     width: 10%;
   }
-  
+
   .back-top {
     right: 2%;
     bottom: 2%;
@@ -945,20 +942,20 @@ body {
     outline: 1px solid var(--clr-secondary);
     transition: ease-in 0.5s;
   }
-  
+
   .show-back-top {
     display: flex;
   }
-  
+
   .back-top:hover {
     background-color: var(--clr-secondary);
     outline: 1px solid var(--clr-tertiary);
   }
-  
+
   .back-top i {
    color: var(--clr-primary)
   }
-  
+
   @keyframes bounce {
     0% {
       transform: scale(1);

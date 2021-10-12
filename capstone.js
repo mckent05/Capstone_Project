@@ -52,19 +52,19 @@ const firstSpeaker = 0;
 let secondSpeaker = 2;
 
 openNav.addEventListener('click', () => {
-    nav.classList.add('show-nav');
+  nav.classList.add('show-nav');
 });
 
-window.addEventListener ('scroll', () => {
-  const scrollY= window.pageYOffset;
-  const headerHeight= header.getBoundingClientRect().height;
-  if ( scrollY > 70) {
+window.addEventListener('scroll', () => {
+  const scrollY = window.pageYOffset;
+  const headerHeight = header.getBoundingClientRect().height;
+  if (scrollY > 70) {
     nav.classList.remove('show-nav');
   }
 
   if (scrollY > headerHeight) {
-    backToTop.classList.add('show-back-top')
-}
+    backToTop.classList.add('show-back-top');
+  }
 
   else {
     backToTop.classList.remove('show-back-top');
@@ -76,7 +76,7 @@ closeNav.addEventListener('click', () => {
 });
 const loadSpeakers = (speakers) => {
   speakers = speakers.slice(firstSpeaker, secondSpeaker);
-  let displaySpeakers = speakers.map(function (speaker) {
+  let displaySpeakers = speakers.map((speaker) => {
     return ` <article class="speaker1">
     <div class="speaker-img-cont">
     <img src=${speaker.speakerImage} alt="speaker1">
@@ -91,16 +91,16 @@ const loadSpeakers = (speakers) => {
   });
   displaySpeakers = displaySpeakers.join('');
   featureSpeakers.innerHTML = displaySpeakers;
-}
+};
 
-window.addEventListener('DOMContentLoaded', function () {
+window.addEventListener('DOMContentLoaded', () => {
   if (body.getBoundingClientRect().width > 768) {
     secondSpeaker = speakerInfo.length;
   }
-  loadSpeakers(speakerInfo);   
+  loadSpeakers(speakerInfo);
 });
 
-showMoreSpeakers.addEventListener('click' ,() => {
+showMoreSpeakers.addEventListener('click', () => {
   secondSpeaker += 2;
   loadSpeakers(speakerInfo);
   if (secondSpeaker > speakerInfo.length - 1) {
