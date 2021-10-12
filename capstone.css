@@ -953,18 +953,18 @@ body {
   }
 
   .back-top i {
-   color: var(--clr-primary)
+    color: var(--clr-primary);
   }
 
   @keyframes bounce {
     0% {
       transform: scale(1);
     }
-  
+
     50% {
       transform: scale(1.1);
     }
-  
+
     100% {
       transform: scale(1);
     }

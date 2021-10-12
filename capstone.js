@@ -76,19 +76,18 @@ closeNav.addEventListener('click', () => {
 });
 const loadSpeakers = (speakers) => {
   speakers = speakers.slice(firstSpeaker, secondSpeaker);
-  let displaySpeakers = speakers.map((speaker) => {
-    return ` <article class="speaker1">
-    <div class="speaker-img-cont">
-    <img src=${speaker.speakerImage} alt="speaker1">
-    </div>
-    <div class="speaker-content">
-    <h2 class="speaker-name">${speaker.speakerName}</h2>
-    <p class="speaker-edu">${speaker.speakerEdu}</p>
-    <div class="underline small-under"></div>
-    <p class="speaker-text">${speaker.speakerDesc}</p>
-    </div>
-    </article>`;
-  });
+  let displaySpeakers = speakers.map( speaker =>  ` <article class="speaker1">
+  <div class="speaker-img-cont">
+  <img src=${speaker.speakerImage} alt="speaker1">
+  </div>
+  <div class="speaker-content">
+  <h2 class="speaker-name">${speaker.speakerName}</h2>
+  <p class="speaker-edu">${speaker.speakerEdu}</p>
+  <div class="underline small-under"></div>
+  <p class="speaker-text">${speaker.speakerDesc}</p>
+  </div>
+  </article>`
+  );
   displaySpeakers = displaySpeakers.join('');
   featureSpeakers.innerHTML = displaySpeakers;
 };
