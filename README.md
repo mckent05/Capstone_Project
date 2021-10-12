@@ -8,6 +8,9 @@
 # Live View
 > To view this project live, please visit this [page](https://mckent05.github.io/Capstone_Project/home.html)
 
+# Link to Watch Presentation 
+> To watch the idea beind this webiste please watch this [video](https://www.loom.com/share/a790ed12f6eb435898d013c5312fc3e4)
+
 # Getting Started
 
 > Visit my [repository](https://github.com/mckent05/Capstone_Project.git)
