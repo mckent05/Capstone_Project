@@ -4,9 +4,9 @@
 }
 
 @font-face { 
-  font-family: 'MyWebFont'; 
-  src: url('WebFont.eot'); 
-  src: url('WebFont.eot?#iefix') format('embedded-opentype'), url('WebFont.woff') format('woff'), url('WebFont.ttf') format('truetype'), url('WebFont.svg#webfont') format('svg'); 
+  font-family: 'MyWebFont';
+  src: url('WebFont.eot');
+  src: url('WebFont.eot?#iefix') format('embedded-opentype'), url('WebFont.woff') format('woff'), url('WebFont.ttf') format('truetype'), url('WebFont.svg#webfont') format('svg');
 }
 
 :root {
@@ -51,8 +51,7 @@ body {
   justify-content: center;
   height: 100%;
   z-index: 10;
-  background: linear-gradient(rgba(11, 12, 12, 0.25), rgba(0, 0, 0, 0.5)),
-    url(Images/nav-bar-mobile.jpg) center/cover no-repeat;
+  background: linear-gradient(rgba(11, 12, 12, 0.25), rgba(0, 0, 0, 0.5)), url(Images/nav-bar-mobile.jpg) center/cover no-repeat;
   transform: translateX(-100%);
   overflow-y: scroll;
 }
@@ -118,12 +117,29 @@ body {
   margin-top: 2.5px;
 }
 
+.social-links a {
+  color: var(--clr-tertiary);
+  text-transform: capitalize;
+  font-size: 18px;
+  text-align: center;
+}
+
+.program-btn a {
+  display: none;
+}
+
 .nav-links li a {
   font-family: var(--ff-primary);
   color: var(--clr-secondary);
   font-size: 24px;
   text-transform: capitalize;
   padding: 8px 4px;
+}
+
+.social-links li {
+  width: 120px;
+  display: flex;
+  justify-content: center;
 }
 
 .nav-links li:last-child {
@@ -147,19 +163,6 @@ body {
   color: var(--clr-tertiary);
 }
 
-.social-links li {
-  width: 120px;
-  display: flex;
-  justify-content: center;
-}
-
-.social-links a {
-  color: var(--clr-tertiary);
-  text-transform: capitalize;
-  font-size: 18px;
-  text-align: center;
-}
-
 .body-header {
   position: relative;
   width: 100%;
@@ -168,8 +171,7 @@ body {
   row-gap: 30px;
   top: 0;
   left: 0;
-  background: linear-gradient(rgba(160, 161, 161, 0.5), rgba(39, 38, 38, 0.5)),
-    url(Images/Webbackg.jpg) center/cover no-repeat;
+  background: linear-gradient(rgba(160, 161, 161, 0.5), rgba(39, 38, 38, 0.5)), url(Images/Webbackg.jpg) center/cover no-repeat;
 }
 
 .btn-header {
@@ -191,6 +193,50 @@ body {
   display: flex;
   flex-direction: column;
   row-gap: 15px;
+}
+
+.program-content p {
+  color: whitesmoke;
+  font-family: var(--ff-primary);
+  font-size: 13.5px;
+  text-transform: capitalize;
+  width: 75%;
+  font-weight: 700;
+}
+
+.about p {
+  text-transform: capitalize;
+  text-align: center;
+  font-family: var(--ff-primary);
+  color: var(--clr-primary);
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.previous-seminar p {
+  text-transform: capitalize;
+  font-family: var(--ff-primary);
+  font-size: 17px;
+  font-weight: 500;
+  text-align: center;
+  color: var(--clr-primary);
+}
+
+.seminar1 p {
+  color: white;
+  font-family: var(--ff-primary);
+  font-weight: bold;
+  text-align: center;
+}
+
+.footer-cont p {
+  font-family: var(--ff-primary);
+  color: var(--clr-primary);
+  font-size: 15px;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: flex-end;
+  font-weight: 600;
 }
 
 .header-title p:first-of-type {
@@ -237,8 +283,7 @@ body {
 }
 
 .program {
-  background: linear-gradient(rgba(63, 208, 212, 0.1), rgba(0, 0, 0, 0.5)),
-  url(Images/main-programbackground.jpg) center/cover no-repeat;
+  background: linear-gradient(rgba(63, 208, 212, 0.1), rgba(0, 0, 0, 0.5)), url(Images/main-programbackground.jpg) center/cover no-repeat;
   position: relative;
   width: 100%;
 }
@@ -285,22 +330,11 @@ body {
   position: relative;
   border: 1px solid grey;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   background-color: rgba(255, 255, 255, 0.5);
   opacity: 0.5;
   padding: 20px 0;
   column-gap: 25px;
-}
-
-.program-content p {
-  color: whitesmoke;
-  font-family: var(--ff-primary);
-  font-size: 13.5px;
-  text-transform: capitalize;
-  width: 75%;
-  position: relative;
-  right: 0;
-  font-weight: 700;
 }
 
 .program-content i {
@@ -341,10 +375,6 @@ body {
   text-transform: capitalize;
 }
 
-.program-btn a {
-  display: none;
-}
-
 .speakers {
   width: 100%;
   position: relative;
@@ -370,7 +400,7 @@ body {
 }
 
 .speaker-header h2 {
-  color:var(--clr-primary);
+  color: var(--clr-primary);
   font-family: var(--ff-primary);
   font-size: 20px;
   text-transform: capitalize;
@@ -387,11 +417,12 @@ body {
 }
 
 .speaker1 {
-  width:100%;
+  width: 100%;
   position: relative;
   display: flex;
   column-gap: 5%;
   justify-content: center;
+  margin-top: 20px;
 }
 
 .speaker1 img {
@@ -406,7 +437,6 @@ body {
   width: 120px;
   position: relative;
   align-items: flex-end;
-  justify-content: baseline;
   z-index: 1;
 }
 
@@ -469,9 +499,6 @@ body {
   outline: 1px solid var(--clr-tertiary);
   height: 50px;
   align-items: center;
-}
-
-.show-more-btn p {
   color: var(--clr-primary);
   text-transform: uppercase;
   font-size: 12px;
@@ -496,14 +523,11 @@ body {
   outline: 1px solid var(--clr-tertiary);
   height: 50px;
   align-items: center;
-  display: none;
-}
-
-.show-less-btn p {
   color: var(--clr-primary);
   text-transform: uppercase;
   font-size: 12px;
   font-weight: bold;
+  display: none;
 }
 
 .hide-btn .show-more-btn {
@@ -515,8 +539,7 @@ body {
 }
 
 .about-header {
-  background: linear-gradient(rgba(61, 63, 63, 0.2), rgba(0, 0, 0, 0.2)),
-    url(Images/aboutusbackg.jpeg) center/cover no-repeat;
+  background: linear-gradient(rgba(61, 63, 63, 0.2), rgba(0, 0, 0, 0.2)), url(Images/aboutusbackg.jpeg) center/cover no-repeat;
 }
 
 .about-top {
@@ -569,15 +592,6 @@ body {
   text-transform: capitalize;
 }
 
-.about p {
-  text-transform: capitalize;
-  text-align: center;
-  font-family: var(--ff-primary);
-  color: var(--clr-primary);
-  font-weight: 500;
-  font-size: 18px;
-}
-
 .about img {
   margin: 20px auto;
   width: 250px;
@@ -602,20 +616,10 @@ body {
   color: var(--clr-primary);
 }
 
-.previous-seminar p {
-  text-transform: capitalize;
-  font-family: var(--ff-primary);
-  font-size: 17px;
-  font-weight: 500;
-  text-align: center;
-  color: var(--clr-primary);
-}
-
 .seminar1 {
   margin-top: 30px;
   position: relative;
-  background: linear-gradient(rgba(121, 150, 151, 0.9), rgba(0, 0, 0, 0.2)),
-    url(Images/graduates1.jpeg) center/cover no-repeat;
+  background: linear-gradient(rgba(121, 150, 151, 0.9), rgba(0, 0, 0, 0.2)), url(Images/graduates1.jpeg) center/cover no-repeat;
   display: flex;
   flex-direction: column;
   row-gap: 10px;
@@ -626,8 +630,7 @@ body {
 }
 
 .seminar1:nth-of-type(2) {
-  background: linear-gradient(rgba(121, 150, 151, 0.9), rgba(0, 0, 0, 0.2)),
-  url(Images/graduates2.jpeg) center/cover no-repeat;
+  background: linear-gradient(rgba(121, 150, 151, 0.9), rgba(0, 0, 0, 0.2)), url(Images/graduates2.jpeg) center/cover no-repeat;
 }
 
 .seminar1 h2 {
@@ -637,12 +640,7 @@ body {
   margin-top: 40px;
 }
 
-.seminar1 p {
-  color: white;
-  font-family: var(--ff-primary);
-  font-weight: bold;
-  text-align: center;
-}
+
 
 .partner {
   width: 100%;
@@ -685,7 +683,7 @@ body {
   row-gap: 30px;
 }
 
-.footer-social img{
+.footer-social img {
   width: 25%;
   height: 85px;
 }
@@ -706,24 +704,14 @@ body {
   width: 15%;
 }
 
-.footer-cont p {
-  font-family: var(--ff-primary);
-  color: var(--clr-primary);
-  font-size: 15px;
-  text-transform: capitalize;
-  display: flex;
-  justify-content: flex-end;
-  font-weight: 600;
-}
-
 .back-top {
   display: none;
 }
 
 @media screen and (min-width: 769px) {
   body {
-    max-width:100vw;
-    margin: 0;    
+    max-width: 100vw;
+    margin: 0;
   }
 
   .social-links i {
@@ -744,7 +732,7 @@ body {
     box-shadow: 0 4px 6px rgba(160, 161, 161, 0.5);
   }
 
-  .social{
+  .social {
     width: 100%;
     order: 0;
     margin: 0;
@@ -771,6 +759,15 @@ body {
     justify-content: space-between;
     flex-direction: row;
     margin: 0 auto;
+  }
+
+  .program-btn a {
+    display: flex;
+    font-family: var(--ff-primary);
+    text-transform: uppercase;
+    color: var(--clr-tertiary);
+    text-decoration: underline;
+    margin-bottom: 50px;
   }
 
   .nav-links li a:hover {
@@ -801,20 +798,16 @@ body {
     padding: 6px 0;
   }
 
-  .nav-links li a{
+  .nav-links li a {
     color: var(--clr-primary);
     font-size: 18px;
   }
 
   .header-title,
   .about-title {
-    margin-top: 200px;
-  }
-
-  .header-title,
-  .about-title {
     width: 80%;
     row-gap: 20px;
+    margin-top: 200px;
   }
 
   .header-title h1 {
@@ -864,6 +857,7 @@ body {
   .program-content {
     flex-direction: column;
     row-gap: 10px;
+    
   }
 
   .program-content h2 {
@@ -873,25 +867,8 @@ body {
     margin-top: 20px;
   }
 
-  .program-content p {
-    text-align: center;
-  }
-
-  .p-content h2 {
-    margin-top: 35px;
-  }
-
   .program-btn button {
     display: none;
-  }
-
-  .program-btn a {
-    display: flex;
-    font-family: var(--ff-primary);
-    text-transform: uppercase;
-    color: var(--clr-tertiary);
-    text-decoration: underline;
-    margin-bottom: 50px;
   }
 
   .speakers-container {
@@ -957,19 +934,20 @@ body {
     bottom: 2%;
     position: fixed;
     display: none;
+    justify-content: center;
+    align-items: center;
     width: 75px;
     height: 75px;
     border-radius: 50%;
     background-color: var(--clr-tertiary);
     box-shadow: 0 2px 8px grey;
     animation: bounce 1.5s infinite;
-    border: none;
     outline: 1px solid var(--clr-secondary);
     transition: ease-in 0.5s;
   }
   
   .show-back-top {
-    display: inline-block;
+    display: flex;
   }
   
   .back-top:hover {
