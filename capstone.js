@@ -64,7 +64,7 @@ window.addEventListener('scroll', () => {
 
   if (scrollY > headerHeight) {
     backToTop.classList.add('show-back-top');
-  }
+}
 
   else {
     backToTop.classList.remove('show-back-top');
@@ -76,7 +76,7 @@ closeNav.addEventListener('click', () => {
 });
 const loadSpeakers = (speakers) => {
   speakers = speakers.slice(firstSpeaker, secondSpeaker);
-  let displaySpeakers = speakers.map( speaker =>  ` <article class="speaker1">
+  let displaySpeakers = speakers.map((speaker) => `<article class="speaker1">
   <div class="speaker-img-cont">
   <img src=${speaker.speakerImage} alt="speaker1">
   </div>
@@ -86,8 +86,7 @@ const loadSpeakers = (speakers) => {
   <div class="underline small-under"></div>
   <p class="speaker-text">${speaker.speakerDesc}</p>
   </div>
-  </article>`
-  );
+  </article>`);
   displaySpeakers = displaySpeakers.join('');
   featureSpeakers.innerHTML = displaySpeakers;
 };
