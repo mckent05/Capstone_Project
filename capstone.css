@@ -13,7 +13,7 @@
   --clr-primary: #272a31;
   --clr-secondary: #ec5242;
   --clr-tertiary: #d3d3d3;
-  --ff-primary: 'WebFont', 'Arial', 'sanserif';
+  --ff-primary: 'COCOGOOSE', sans-serif;
 }
 
 i {
@@ -120,7 +120,7 @@ body {
 .social-links a {
   color: var(--clr-tertiary);
   text-transform: capitalize;
-  font-size: 18px;
+  font-size: 15px;
   text-align: center;
 }
 
@@ -131,7 +131,7 @@ body {
 .nav-links li a {
   font-family: var(--ff-primary);
   color: var(--clr-secondary);
-  font-size: 24px;
+  font-size: 20px;
   text-transform: capitalize;
   padding: 8px 4px;
 }
@@ -171,7 +171,7 @@ body {
   row-gap: 30px;
   top: 0;
   left: 0;
-  background: linear-gradient(rgba(160, 161, 161, 0.5), rgba(39, 38, 38, 0.5)), url(Images/Webbackg.jpg) center/cover no-repeat;
+  background: linear-gradient(rgba(236, 235, 235, 0.9), rgba(236, 235, 235, 0.932)), url(Images/Webbackg.jpg) center/cover no-repeat;
 }
 
 .btn-header {
@@ -198,10 +198,10 @@ body {
 .program-content p {
   color: whitesmoke;
   font-family: var(--ff-primary);
-  font-size: 13.5px;
+  font-size: 15px;
   text-transform: capitalize;
   width: 75%;
-  font-weight: 700;
+  font-weight: 200;
 }
 
 .about p {
@@ -217,7 +217,7 @@ body {
   text-transform: capitalize;
   font-family: var(--ff-primary);
   font-size: 17px;
-  font-weight: 500;
+  font-weight: normal;
   text-align: center;
   color: var(--clr-primary);
 }
@@ -225,7 +225,7 @@ body {
 .seminar1 p {
   color: white;
   font-family: var(--ff-primary);
-  font-weight: bold;
+  font-weight: lighter;
   text-align: center;
 }
 
@@ -260,8 +260,8 @@ body {
 
 .header-desc {
   color: var(--clr-primary);
-  font-size: 22px;
-  outline: 2px solid var(--clr-tertiary);
+  font-size: 14px;
+  outline: 1px solid white;
   font-family: var(--ff-primary);
   line-height: 30px;
   padding: 20px 15px;
@@ -269,21 +269,21 @@ body {
 
 .header-title h2 {
   font-family: var(--ff-primary);
-  font-size: 30px;
-  font-weight: 600;
+  font-size: 25px;
+  font-weight: 500;
   color: var(--clr-primary);
 }
 
 .header-title h3 {
   margin-bottom: 75px;
   font-family: var(--ff-primary);
-  font-size: 24px;
+  font-size: 18px;
   color: var(--clr-primary);
   text-transform: capitalize;
 }
 
 .program {
-  background: linear-gradient(rgba(63, 208, 212, 0.1), rgba(0, 0, 0, 0.5)), url(Images/main-programbackground.jpg) center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url(Images/main-programbackground.jpg) center/cover no-repeat;
   position: relative;
   width: 100%;
 }
@@ -331,8 +331,8 @@ body {
   border: 1px solid grey;
   align-items: center;
   justify-content: flex-start;
-  background-color: rgba(255, 255, 255, 0.5);
-  opacity: 0.5;
+  background-color: rgba(7, 7, 7, 0.89);
+  opacity: 0.8;
   padding: 20px 0;
   column-gap: 25px;
 }
@@ -353,6 +353,7 @@ body {
   font-size: 18px;
   font-weight: 700;
   text-align: left;
+  width: 75%;
   width: 40%;
 }
 
@@ -423,6 +424,7 @@ body {
   column-gap: 5%;
   justify-content: center;
   margin-top: 20px;
+  background-color: rgba(243, 226, 226, 0.5);
 }
 
 .speaker1 img {
@@ -434,7 +436,7 @@ body {
 }
 
 .speaker-img-cont {
-  width: 120px;
+  width: 150px;
   position: relative;
   align-items: flex-end;
   z-index: 1;
@@ -487,8 +489,8 @@ body {
   color: var(--clr-primary);
   font-family: var(--ff-primary);
   text-transform: capitalize;
-  font-size: 14px;
-  font-weight: 700;
+  font-size: 13px;
+  font-weight: lighter;
 }
 
 .show-more-btn {
@@ -539,7 +541,7 @@ body {
 }
 
 .about-header {
-  background: linear-gradient(rgba(61, 63, 63, 0.2), rgba(0, 0, 0, 0.2)), url(Images/aboutusbackg.jpeg) center/cover no-repeat;
+  background: linear-gradient(rgba(236, 235, 235, 0.8), rgba(236, 235, 235, 0.8)), url(Images/aboutusbackg.jpeg) center/cover no-repeat;
 }
 
 .about-top {
@@ -548,16 +550,15 @@ body {
 
 .about-top:nth-child(3) {
   font-family: var(--ff-primary);
-  font-weight: 600;
+  font-weight: normal;
   color: var(--clr-primary);
-  background: rgba(229, 229, 233, 0.5);
   word-spacing: 3px;
   line-height: 18px;
   padding: 20px 15px;
 }
 
 .about-top:nth-child(4) {
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .about-page-cont {
@@ -619,7 +620,7 @@ body {
 .seminar1 {
   margin-top: 30px;
   position: relative;
-  background: linear-gradient(rgba(121, 150, 151, 0.9), rgba(0, 0, 0, 0.2)), url(Images/graduates1.jpeg) center/cover no-repeat;
+  background: linear-gradient(rgba(204, 2, 2, 0.8), rgba(204, 2, 2, 0.8)), url(Images/graduates1.jpeg) center/cover no-repeat;
   display: flex;
   flex-direction: column;
   row-gap: 10px;
@@ -630,7 +631,7 @@ body {
 }
 
 .seminar1:nth-of-type(2) {
-  background: linear-gradient(rgba(121, 150, 151, 0.9), rgba(0, 0, 0, 0.2)), url(Images/graduates2.jpeg) center/cover no-repeat;
+  background: linear-gradient(rgba(204, 2, 2, 0.7), rgba(204, 2, 2, 0.7)), url(Images/graduates2.jpeg) center/cover no-repeat;
 }
 
 .seminar1 h2 {
@@ -646,7 +647,7 @@ body {
   flex-direction: column;
   row-gap: 5px;
   position: relative;
-  background-color: rgba(0, 0, 0, 1);
+  background-color: #272a31
 }
 
 .partner-home,
@@ -664,7 +665,7 @@ body {
 }
 
 .partner h2 {
-  font-size: 24px;
+  font-size: 20px;
   font-family: var(--ff-primary);
   color: var(--clr-tertiary);
   text-align: center;
@@ -672,18 +673,24 @@ body {
 }
 
 .footer-social {
-  width: 90%;
-  margin: 0 auto 20px auto;
+  width: 75%;
+  margin: 25px auto 50px auto;
   display: flex;
   justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
   flex-wrap: wrap;
-  column-gap: 20px;
+  column-gap: 30px;
   row-gap: 30px;
 }
 
-.footer-social img {
-  width: 25%;
-  height: 85px;
+.partner-icon {
+  margin: 50px 10% 20px 10%;
+  display: flex;
+  justify-content: center;
+  transform: scale(5);
+  
 }
 
 .footer {
@@ -833,7 +840,7 @@ body {
   }
 
   .about-top:nth-child(4) {
-    font-size: 24px;
+    font-size: 16px;
     line-height: 30px;
     margin: 25px auto;
     width: 80%;
@@ -849,12 +856,12 @@ body {
 
   .program-content-container {
     flex-direction: row;
-    column-gap: 2px;
+    column-gap: 3px;
   }
 
   .program-content {
     flex-direction: column;
-    row-gap: 10px;
+    row-gap: 15px;
   }
 
   .program-content h2 {
@@ -862,6 +869,10 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 20px;
+  }
+
+  .program-content p {
+    text-align: center;
   }
 
   .program-btn button {
@@ -888,7 +899,12 @@ body {
 
   .partner {
     display: flex;
-    row-gap: 15px;
+    row-gap: 20px;
+  }
+
+  .partner-icon {
+    transform: scale(4.5);
+    margin: 50px 80px 40px 0;
   }
 
   .about-page {
@@ -905,12 +921,9 @@ body {
   .footer-social {
     width: 80%;
     column-gap: 40px;
-    margin-bottom: 60px;
-  }
-
-  .footer-social img {
-    width: 7%;
-    height: 60px;
+    margin-bottom: 20px;
+    position: relative;
+    left: 4%;
   }
 
   .footer {

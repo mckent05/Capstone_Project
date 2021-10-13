@@ -4,7 +4,6 @@
 > This project is an adaptation of [Behance's CC Global Submit 2015](https://www.behance.net/adagio07) by  Cindy Chin,and is used under a [CC-BY-SA 4.0 International license](https://creativecommons.org/licenses/by-sa/4.0/). In version of the template, there have been changes to some of the icons used.
 
 
-
 # Live View
 > To view this project live, please visit this [page](https://mckent05.github.io/Capstone_Project/home.html)
 
@@ -45,3 +44,6 @@ Contributions, issues, and feature requests are welcome!
 ## Show your support
 
 Give a ⭐️ if you like this project!
+
+## Copyright
+ ©Copyright Cindy Shin Korea Republic, 2021
