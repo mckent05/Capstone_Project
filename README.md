@@ -16,7 +16,7 @@
 # Getting Started
 
 > Visit my [repository](https://github.com/mckent05/Capstone_Project.git)
-> Clone the repository in your code editor using the URL above.
+> Clone the repository, using 'git clone url', in your code editor using the URL above.
 > Change directory into the repository and make your desired changes.
 
 
@@ -42,8 +42,14 @@ Additional description about the project and its features.
 
 Contributions, issues, and feature requests are welcome!
 
-
-
 ## Show your support
 
 Give a ⭐️ if you like this project!
+
+# Acknowledgments
+- Cindy Shin whose design template was used to create this project.
+- Unsplash for providing content related free pictures.
+- Thanks to my teammates, learning and coding partners.
+
+# License
+This project is [MIT](./MIT.md) licensed.
