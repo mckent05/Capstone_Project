@@ -647,7 +647,7 @@ body {
   flex-direction: column;
   row-gap: 5px;
   position: relative;
-  background-color: #272a31
+  background-color: #272a31;
 }
 
 .partner-home,
@@ -690,7 +690,6 @@ body {
   display: flex;
   justify-content: center;
   transform: scale(5);
-  
 }
 
 .footer {
@@ -871,7 +870,7 @@ body {
     margin-top: 20px;
   }
 
-  .program-content p {
+  .center {
     text-align: center;
   }
 
