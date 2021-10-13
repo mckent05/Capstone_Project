@@ -197,11 +197,11 @@ body {
 
 .program-content p {
   color: whitesmoke;
-  font-family: var(--ff-primary);
+  font-family: 'Roboto', sans-serif;
   font-size: 15px;
   text-transform: capitalize;
   width: 75%;
-  font-weight: 200;
+  font-weight: lighter;
 }
 
 .about p {
@@ -276,14 +276,15 @@ body {
 
 .header-title h3 {
   margin-bottom: 75px;
-  font-family: var(--ff-primary);
-  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
   color: var(--clr-primary);
   text-transform: capitalize;
 }
 
 .program {
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url(Images/main-programbackground.jpg) center/cover no-repeat;
+  background: url(Images/main-back.jpeg);
+  background-repeat: repeat;
   position: relative;
   width: 100%;
 }
@@ -331,7 +332,7 @@ body {
   border: 1px solid grey;
   align-items: center;
   justify-content: flex-start;
-  background-color: rgba(7, 7, 7, 0.89);
+  background-color: rgba(209, 209, 209, 0.2);
   opacity: 0.8;
   padding: 20px 0;
   column-gap: 25px;
@@ -350,8 +351,8 @@ body {
   color: var(--clr-secondary);
   text-transform: capitalize;
   font-family: var(--ff-primary);
-  font-size: 18px;
-  font-weight: 700;
+  font-size: 16px;
+  font-weight: bold;
   text-align: left;
   width: 75%;
   width: 40%;
@@ -424,7 +425,7 @@ body {
   column-gap: 5%;
   justify-content: center;
   margin-top: 20px;
-  background-color: rgba(243, 226, 226, 0.5);
+  background-color: rgba(248, 247, 247, 0.61);
 }
 
 .speaker1 img {
@@ -487,9 +488,9 @@ body {
   position: relative;
   width: 100%;
   color: var(--clr-primary);
-  font-family: var(--ff-primary);
+  font-family: 'Roboto', sans-serif;
   text-transform: capitalize;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: lighter;
 }
 

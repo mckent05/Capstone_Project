@@ -47,4 +47,8 @@ Contributions, issues, and feature requests are welcome!
 Give a ⭐️ if you like this project!
 
 ## Copyright
+<<<<<<< HEAD
  © Copyright Cindy Shin Korea Republic, 2021
+=======
+ ©Copyright Cindy Shin Korea Republic, 2021
+>>>>>>> 2d83c0b42ace5b60b67db3eb0921e9405887f073
