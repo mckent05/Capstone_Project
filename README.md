@@ -3,7 +3,12 @@
 > This is my Microverse module 1 Capstone Project: Surviving The Microverse2.0 Portal 2021!
 > This project is an adaptation of [Behance's CC Global Submit 2015](https://www.behance.net/adagio07) by  Cindy Chin,and is used under a [CC-BY-SA 4.0 International license](https://creativecommons.org/licenses/by-sa/4.0/). In version of the template, there have been changes to some of the icons used.
 
+# Preview-Images
 
+![image](https://user-images.githubusercontent.com/73607512/137104829-843c8f21-eb63-48fc-ad21-6c72683f59b7.png)
+![preview4](https://user-images.githubusercontent.com/73607512/137105975-b2419089-4b4b-4ffb-8445-8c2ca073e2a8.jpg)
+![preview2](https://user-images.githubusercontent.com/73607512/137105914-cc39ab9e-522c-4bad-b44f-2898c83cf212.jpg)
+![mobile-preview](https://user-images.githubusercontent.com/73607512/137105883-ff63f4ae-fda3-4ca4-99af-882be9d44445.jpg)
 
 # Live View
 > To view this project live, please visit this [page](https://mckent05.github.io/Capstone_Project/home.html)
