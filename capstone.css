@@ -3,17 +3,13 @@
   scroll-behavior: smooth;
 }
 
-@font-face {
-  font-family: 'MyWebFont';
-  src: url('WebFont.eot');
-  src: url('WebFont.eot?#iefix') format('embedded-opentype'), url('WebFont.woff') format('woff'), url('WebFont.ttf') format('truetype'), url('WebFont.svg#webfont') format('svg');
-}
-
 :root {
   --clr-primary: #272a31;
   --clr-secondary: #ec5242;
   --clr-tertiary: #d3d3d3;
   --ff-primary: 'COCOGOOSE', sans-serif;
+  --t-capital: capitalize;
+  --t-center: center;
 }
 
 i {
@@ -42,13 +38,30 @@ body {
   flex-direction: column;
 }
 
+.d-flex {
+  display: flex;
+}
+
+.a-center {
+  align-items: center;
+}
+
+.j-center {
+  justify-content: center;
+}
+
+.f-col {
+  flex-direction: column;
+}
+
+.p-relative {
+  position: relative;
+}
+
 .social-nav {
   position: fixed;
-  display: flex;
-  flex-direction: column;
   width: 100%;
   left: 0;
-  justify-content: center;
   height: 100%;
   z-index: 10;
   background: linear-gradient(rgba(11, 12, 12, 0.25), rgba(0, 0, 0, 0.5)), url(Images/nav-bar-mobile.jpg) center/cover no-repeat;
@@ -62,7 +75,6 @@ body {
 }
 
 .social-nav button {
-  display: flex;
   width: fit-content;
   margin: 20px 0 15px 5%;
   justify-content: flex-start;
@@ -87,41 +99,30 @@ body {
 }
 
 .social {
-  display: flex;
-  position: relative;
-  flex-direction: column;
   width: 90%;
   margin: 5px auto;
   order: 2;
 }
 
 .nav {
-  position: relative;
   width: 90%;
   margin: 10px auto;
 }
 
 .nav-wrap {
-  display: flex;
-  flex-direction: column;
   row-gap: 30px;
 }
 
 .nav-links {
-  display: flex;
-  position: relative;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   row-gap: 18.5px;
   margin-top: 2.5px;
 }
 
 .social-links a {
   color: var(--clr-tertiary);
-  text-transform: capitalize;
+  text-transform: var(--t-capital);
   font-size: 15px;
-  text-align: center;
+  text-align: var(--t-center);
 }
 
 .program-btn a {
@@ -132,7 +133,7 @@ body {
   font-family: var(--ff-primary);
   color: var(--clr-secondary);
   font-size: 20px;
-  text-transform: capitalize;
+  text-transform: var(--t-capital);
   padding: 8px 4px;
 }
 
@@ -146,16 +147,13 @@ body {
   background-color: var(--clr-tertiary);
   border: 4px solid var(--clr-secondary);
   padding: 8px 4px;
-  text-align: center;
+  text-align: var(--t-center);
 }
 
 .social-links {
-  display: flex;
   width: 100%;
-  justify-content: center;
   margin: 30px auto 20px auto;
   height: 4vh;
-  align-items: center;
   column-gap: 4%;
 }
 
@@ -164,10 +162,7 @@ body {
 }
 
 .body-header {
-  position: relative;
   width: 100%;
-  display: flex;
-  flex-direction: column;
   row-gap: 30px;
   top: 0;
   left: 0;
@@ -175,7 +170,6 @@ body {
 }
 
 .btn-header {
-  display: flex;
   justify-content: flex-start;
   margin: 40px 0 0 5%;
   width: fit-content;
@@ -188,10 +182,7 @@ body {
 
 .header-title {
   margin: 10px auto 0 auto;
-  position: relative;
   width: 90%;
-  display: flex;
-  flex-direction: column;
   row-gap: 15px;
 }
 
@@ -199,14 +190,14 @@ body {
   color: whitesmoke;
   font-family: 'Roboto', sans-serif;
   font-size: 15px;
-  text-transform: capitalize;
+  text-transform: var(--t-capital);
   width: 75%;
   font-weight: lighter;
 }
 
 .about p {
-  text-transform: capitalize;
-  text-align: center;
+  text-transform: var(--t-capital);
+  text-align: var(--t-center);
   font-family: var(--ff-primary);
   color: var(--clr-primary);
   font-weight: 500;
@@ -214,11 +205,11 @@ body {
 }
 
 .previous-seminar p {
-  text-transform: capitalize;
+  text-transform: var(--t-capital);
   font-family: var(--ff-primary);
   font-size: 17px;
   font-weight: normal;
-  text-align: center;
+  text-align: var(--t-center);
   color: var(--clr-primary);
 }
 
@@ -226,15 +217,14 @@ body {
   color: white;
   font-family: var(--ff-primary);
   font-weight: lighter;
-  text-align: center;
+  text-align: var(--t-center);
 }
 
 .footer-cont p {
   font-family: var(--ff-primary);
   color: var(--clr-primary);
   font-size: 15px;
-  text-transform: capitalize;
-  display: flex;
+  text-transform: var(--t-capital);
   justify-content: flex-end;
   font-weight: 600;
 }
@@ -245,7 +235,7 @@ body {
   font-size: 24px;
   letter-spacing: 1px;
   font-weight: 500;
-  text-transform: capitalize;
+  text-transform: var(--t-capital);
   line-height: 24px;
 }
 
@@ -279,29 +269,23 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 15px;
   color: var(--clr-primary);
-  text-transform: capitalize;
+  text-transform: var(--t-capital);
 }
 
 .program {
   background: url(Images/main-back.jpeg);
   background-repeat: repeat;
-  position: relative;
   width: 100%;
 }
 
 .program-container {
   width: 90%;
-  display: flex;
-  flex-direction: column;
   row-gap: 40px;
   margin: 40px auto;
 }
 
 .program-header {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   row-gap: 15px;
 }
 
@@ -318,9 +302,6 @@ body {
 }
 
 .program-content-container {
-  position: relative;
-  display: flex;
-  flex-direction: column;
   row-gap: 20px;
   width: 100%;
 }
@@ -349,7 +330,7 @@ body {
 
 .program-content h2 {
   color: var(--clr-secondary);
-  text-transform: capitalize;
+  text-transform: var(--t-capital);
   font-family: var(--ff-primary);
   font-size: 16px;
   font-weight: bold;
@@ -360,9 +341,6 @@ body {
 
 .program-btn {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .program-btn button {
@@ -374,30 +352,22 @@ body {
   padding: 10px 7px;
   color: #fff;
   font-size: 20px;
-  text-transform: capitalize;
+  text-transform: var(--t-capital);
 }
 
 .speakers {
   width: 100%;
-  position: relative;
   background-color: #fff;
 }
 
 .speakers-container {
   width: 88%;
-  position: relative;
   margin: 50px auto;
-  display: flex;
-  flex-direction: column;
   row-gap: 45px;
 }
 
 .speaker-header {
-  display: flex;
-  position: relative;
   width: 100%;
-  align-items: center;
-  flex-direction: column;
   row-gap: 15px;
 }
 
@@ -405,14 +375,11 @@ body {
   color: var(--clr-primary);
   font-family: var(--ff-primary);
   font-size: 20px;
-  text-transform: capitalize;
+  text-transform: var(--t-capital);
   font-weight: 700;
 }
 
 .featured-speakers {
-  position: relative;
-  display: flex;
-  flex-direction: column;
   row-gap: 35px;
   width: 100%;
   flex-wrap: wrap;
@@ -438,7 +405,6 @@ body {
 
 .speaker-img-cont {
   width: 150px;
-  position: relative;
   align-items: flex-end;
   z-index: 1;
 }
@@ -456,17 +422,14 @@ body {
 
 .speaker-content {
   width: 55%;
-  display: flex;
-  flex-direction: column;
 }
 
 .speaker-content h2 {
-  position: relative;
   margin-top: 10px;
   width: 100%;
   font-family: var(--ff-primary);
   color: var(--clr-primary);
-  text-transform: capitalize;
+  text-transform: var(--t-capital);
   font-size: 18px;
 }
 
@@ -475,7 +438,7 @@ body {
   margin: 5px 0;
   width: 100%;
   color: var(--clr-secondary);
-  text-transform: capitalize;
+  text-transform: var(--t-capital);
   font-style: italic;
 }
 
@@ -485,23 +448,19 @@ body {
 }
 
 .speaker-text {
-  position: relative;
   width: 100%;
   color: var(--clr-primary);
   font-family: 'Roboto', sans-serif;
-  text-transform: capitalize;
+  text-transform: var(--t-capital);
   font-size: 15px;
   font-weight: lighter;
 }
 
 .show-more-btn {
-  display: flex;
   width: 100%;
   column-gap: 15px;
-  justify-content: center;
   outline: 1px solid var(--clr-tertiary);
   height: 50px;
-  align-items: center;
   color: var(--clr-primary);
   text-transform: uppercase;
   font-size: 12px;
@@ -514,18 +473,14 @@ body {
 }
 
 .btn-speaker-cont {
-  display: flex;
-  flex-direction: column;
   row-gap: 30px;
 }
 
 .show-less-btn {
   width: 100%;
   column-gap: 15px;
-  justify-content: center;
   outline: 1px solid var(--clr-tertiary);
   height: 50px;
-  align-items: center;
   color: var(--clr-primary);
   text-transform: uppercase;
   font-size: 12px;
@@ -546,7 +501,7 @@ body {
 }
 
 .about-top {
-  text-align: center;
+  text-align: var(--t-center);
 }
 
 .about-top:nth-child(3) {
@@ -564,34 +519,26 @@ body {
 
 .about-page-cont {
   width: 100%;
-  position: relative;
   margin-bottom: 50px;
 }
 
 .about-page {
-  position: relative;
   width: 90%;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
 }
 
 .about {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin-top: 40px;
   row-gap: 15px;
   box-shadow: 0 2px 6px var(--clr-tertiary);
 }
 
 .about h2 {
-  text-align: center;
+  text-align: var(--t-center);
   font-family: var(--ff-primary);
   font-size: 25px;
   color: var(--clr-primary);
-  text-transform: capitalize;
+  text-transform: var(--t-capital);
 }
 
 .about img {
@@ -601,20 +548,16 @@ body {
 }
 
 .previous-seminar {
-  position: relative;
-  display: flex;
-  flex-direction: column;
   row-gap: 15px;
-  align-items: center;
   margin-top: 30px;
 }
 
 .previous-seminar h2 {
-  text-transform: capitalize;
+  text-transform: var(--t-capital);
   font-family: var(--ff-primary);
   font-size: 25px;
   font-weight: 500;
-  text-align: center;
+  text-align: var(--t-center);
   color: var(--clr-primary);
 }
 
@@ -622,11 +565,7 @@ body {
   margin-top: 30px;
   position: relative;
   background: linear-gradient(rgba(204, 2, 2, 0.8), rgba(204, 2, 2, 0.8)), url(Images/graduates1.jpeg) center/cover no-repeat;
-  display: flex;
-  flex-direction: column;
   row-gap: 10px;
-  align-items: center;
-  justify-content: center;
   height: 200px;
   text-decoration: none;
 }
@@ -644,10 +583,7 @@ body {
 
 .partner {
   width: 100%;
-  display: flex;
-  flex-direction: column;
   row-gap: 5px;
-  position: relative;
   background-color: #272a31;
 }
 
@@ -659,27 +595,21 @@ body {
 .partner-header {
   width: 90%;
   margin: 50px auto 0 auto;
-  display: flex;
-  flex-direction: column;
   row-gap: 15px;
-  align-items: center;
 }
 
 .partner h2 {
   font-size: 20px;
   font-family: var(--ff-primary);
   color: var(--clr-tertiary);
-  text-align: center;
-  text-transform: capitalize;
+  text-align: var(--t-center);
+  text-transform: var(--t-capital);
 }
 
 .footer-social {
   width: 75%;
   margin: 25px auto 50px auto;
-  display: flex;
-  justify-content: center;
   justify-items: center;
-  align-items: center;
   align-content: center;
   flex-wrap: wrap;
   column-gap: 30px;
@@ -700,9 +630,7 @@ body {
 .footer-cont {
   width: 90%;
   margin: 20px auto;
-  display: flex;
   column-gap: 20px;
-  align-items: center;
 }
 
 .footer-cont img {
@@ -717,6 +645,10 @@ body {
   body {
     max-width: 100vw;
     margin: 0;
+  }
+
+  .f-row {
+    flex-direction: row;
   }
 
   .social-links i {
@@ -746,13 +678,10 @@ body {
   }
 
   .logo {
-    display: flex;
-    align-items: center;
     margin: 0;
   }
 
   .nav-links {
-    flex-direction: row;
     justify-content: flex-end;
     column-gap: 30px;
     margin-top: 0;
@@ -760,9 +689,7 @@ body {
 
   .nav-wrap {
     width: 80%;
-    display: flex;
     justify-content: space-between;
-    flex-direction: row;
     margin: 0 auto;
   }
 
@@ -790,7 +717,6 @@ body {
   }
 
   .social-links {
-    flex-direction: row;
     width: 80%;
     margin: 0 auto;
     column-gap: 25px;
@@ -821,7 +747,7 @@ body {
   }
 
   .about-top {
-    text-align: center;
+    text-align: var(--t-center);
   }
 
   .about-top:nth-child(1) {
@@ -855,7 +781,6 @@ body {
   }
 
   .program-content-container {
-    flex-direction: row;
     column-gap: 3px;
   }
 
@@ -872,7 +797,7 @@ body {
   }
 
   .center {
-    text-align: center;
+    text-align: var(--t-center);
   }
 
   .program-btn button {
@@ -884,9 +809,7 @@ body {
   }
 
   .featured-speakers {
-    flex-direction: row;
     column-gap: 30px;
-    justify-content: center;
   }
 
   .speaker1 {
@@ -898,7 +821,6 @@ body {
   }
 
   .partner {
-    display: flex;
     row-gap: 20px;
   }
 
@@ -912,9 +834,7 @@ body {
   }
 
   .previous-seminar > div:nth-of-type(2) {
-    display: flex;
     width: 100%;
-    justify-content: center;
     column-gap: 30px;
   }
 
@@ -922,12 +842,7 @@ body {
     width: 80%;
     column-gap: 40px;
     margin-bottom: 20px;
-    position: relative;
     left: 4%;
-  }
-
-  .footer {
-    display: flex;
   }
 
   .footer-cont {
@@ -944,8 +859,6 @@ body {
     bottom: 2%;
     position: fixed;
     display: none;
-    justify-content: center;
-    align-items: center;
     width: 75px;
     height: 75px;
     border-radius: 50%;
