@@ -74,15 +74,15 @@ closeNav.addEventListener('click', () => {
 });
 const loadSpeakers = (speakers) => {
   speakers = speakers.slice(firstSpeaker, secondSpeaker);
-  let displaySpeakers = speakers.map((speaker) => `<article class="speaker1">
-  <div class="speaker-img-cont">
+  let displaySpeakers = speakers.map((speaker) => `<article class="speaker1 p-relative d-flex j-center">
+  <div class="speaker-img-cont p-relative">
   <img src=${speaker.speakerImage} alt="speaker1">
   </div>
-  <div class="speaker-content">
-  <h2 class="speaker-name">${speaker.speakerName}</h2>
+  <div class="speaker-content d-flex f-col">
+  <h2 class="speaker-name p-relative">${speaker.speakerName}</h2>
   <p class="speaker-edu">${speaker.speakerEdu}</p>
   <div class="underline small-under"></div>
-  <p class="speaker-text">${speaker.speakerDesc}</p>
+  <p class="speaker-text p-relative">${speaker.speakerDesc}</p>
   </div>
   </article>`);
   displaySpeakers = displaySpeakers.join('');
